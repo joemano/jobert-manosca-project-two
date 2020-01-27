@@ -1,23 +1,22 @@
-$primaryGreen: #709B6B;
-$secondaryGreen: #345231;
+$primary-green: #709B6B;
+$secondary-green: #345231;
 
 $accent: #E4A436;
 
-$backgroundBlack: #1F1F1F;
-$backgroundWhite: #F6F6F6;
+$background-black: #1F1F1F;
+$background-white: #F6F6F6;
 
 //Hover and Focus
-$aHoverFocus: "a:hover, a:focus";
+$a-hover-focus: "a:hover, a:focus";
 
 //Fonts
-$openSans: 'Open Sans', sans-serif;
-$playfairDisplay: 'Playfair Display', serif;
-$greatVibes: 'Great Vibes', cursive;
+$abril-fatface: 'Abril Fatface', cursive;
+$montserrat: 'Montserrat', sans-serif;
 
 //Font sizing
-@mixin fontSize($sizeValue){
-	font-size: $sizeValue * 1px;
-	font-size: ($sizeValue/10) * 1rem;
+@mixin fontSize($size-value){
+	font-size: $size-value * 1px;
+	font-size: ($size-value/10) * 1rem;
 }
 
 //Flexbox centering
