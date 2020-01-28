@@ -64,7 +64,7 @@ article {
 
         position: absolute;
         z-index: -1;
-        left: 3%;
+        left: 20px;
         top: 20px;
 
         width: 100vw;
@@ -74,4 +74,23 @@ article {
 
 .journey {
     background: $background-tertiary;
+
+    padding: 100px 0;
+
+    .container {
+        display: flex;
+    }
+
+    .journey-image {
+        width: 25%;
+        position: relative;
+        top: -20px;
+        left: -20px;
+        box-shadow: 20px 20px 0 0 $background-secondary;
+    } 
+    
+    .journey-text {
+        width: 75%;
+        padding-left: 7%;
+    }
 }
