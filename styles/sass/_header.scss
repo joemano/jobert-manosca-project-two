@@ -1,11 +1,64 @@
 header {
     background: $background-primary;
+    height: 100vh;
 
-    .header-text {
-        .rounded {
-            font-family: $montserrat;
-            @include font-size(20);
+    nav {
+        @include center-flex();
+        height: 15vh;
+        ul {
+            @include center-flex();
+            height: 100%;
+
+            li {
+                margin: 0 2%;
+            }
+
+            a {
+                padding: 10px;
+                letter-spacing: 0.1rem;
+                font-weight: 700;
+                color: $nav-text;
+            }
+        }
+    }
+
+    .header-flex {
+        @include center-flex();
+        flex-wrap: wrap;
+        height: 85vh;
+        width: 100%;
+        .header-text {
+            width: 60%;
+        }
+
+        .header-image {
+            position: relative;
+            top: 50px;
+            width: 40%;
+            height: 100%;
+
+            img{
+                box-shadow: 20px 20px 0 0 #fff;
+            }
+        }
+
+        h2:before {
+            // content: url(../assets/circle-text.png);
+            content: "";
+            background: url(../assets/circle-text.png) no-repeat;
+            background-size: contain;
+            height: 85%;
+            width: 100%;
+            position: absolute;
+            left: -50px;
+        }
+    
+        h2 {
             color: #fff;
+            position: relative;
+            display: inline-block;
+
+            margin: auto;
         }
     }
 }

@@ -260,8 +260,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  font-size: 80px;
-  font-size: 8rem;
+  font-size: calc(4rem + 8vw);
 }
 
 h1, h3 {
@@ -282,7 +281,6 @@ a {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
 }
 
 button {
@@ -298,21 +296,104 @@ button {
 img {
   max-width: 100%;
   height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
   width: 80%;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1280px;
 }
 
 header {
-  background: #709B6B;
+  background: #345231;
+  height: 100vh;
 }
 
-header .header-text .rounded {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-size: 2rem;
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header nav ul li {
+  margin: 0 2%;
+}
+
+header nav ul a {
+  padding: 10px;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
   color: #fff;
+}
+
+header .header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 85vh;
+  width: 100%;
+}
+
+header .header-flex .header-text {
+  width: 60%;
+}
+
+header .header-flex .header-image {
+  position: relative;
+  top: 50px;
+  width: 40%;
+  height: 100%;
+}
+
+header .header-flex .header-image img {
+  -webkit-box-shadow: 20px 20px 0 0 #fff;
+          box-shadow: 20px 20px 0 0 #fff;
+}
+
+header .header-flex h2:before {
+  content: "";
+  background: url(../assets/circle-text.png) no-repeat;
+  background-size: contain;
+  height: 85%;
+  width: 100%;
+  position: absolute;
+  left: -50px;
+}
+
+header .header-flex h2 {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin: auto;
 }
