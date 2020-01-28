@@ -1,0 +1,11 @@
+header {
+    background: $background-primary;
+
+    .header-text {
+        .rounded {
+            font-family: $montserrat;
+            @include font-size(20);
+            color: #fff;
+        }
+    }
+}

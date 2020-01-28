@@ -1,9 +1,10 @@
-$primary-green: #709B6B;
-$secondary-green: #345231;
+$primary-text: #1F1F1F;
+$nav-text: #fff;
 
 $accent: #E4A436;
 
-$background-black: #1F1F1F;
+$background-primary: #709B6B;
+$background-secondary: #345231;
 $background-white: #F6F6F6;
 
 //Hover and Focus
@@ -14,13 +15,13 @@ $abril-fatface: 'Abril Fatface', cursive;
 $montserrat: 'Montserrat', sans-serif;
 
 //Font sizing
-@mixin fontSize($size-value){
+@mixin font-size($size-value){
 	font-size: $size-value * 1px;
 	font-size: ($size-value/10) * 1rem;
 }
 
 //Flexbox centering
-@mixin centerFlex() {
+@mixin center-flex() {
 	display: flex;
 	justify-content: center;
 	align-items: center;

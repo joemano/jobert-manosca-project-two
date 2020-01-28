@@ -1,0 +1,66 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $montserrat;
+    @include font-size(20);
+    color: $primary-text;
+    line-height: 3.2rem;
+}
+
+h1, h2, h3, h4, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: $abril-fatface;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+h2 {
+    @include font-size(80);
+}
+
+h1, h3 {
+    @include font-size(42);
+}
+
+h4 {
+    @include font-size(32);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $nav-text;
+}
+
+button {
+    border: none;
+    background: $accent;
+    padding: 10px 20px;
+
+    font-family: $abril-fatface;
+    @include font-size(20);
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
