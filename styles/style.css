@@ -397,3 +397,13 @@ header .header-flex h2 {
   display: inline-block;
   margin: auto;
 }
+
+.about {
+  background: #F6F6F6;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.about p {
+  margin: 25px 0;
+}
