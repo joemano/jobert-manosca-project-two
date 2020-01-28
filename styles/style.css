@@ -283,6 +283,10 @@ a {
   text-transform: uppercase;
 }
 
+p {
+  margin: 25px 0;
+}
+
 button {
   border: none;
   background: #E4A436;
@@ -404,6 +408,72 @@ header .header-flex h2 {
   padding: 100px 0;
 }
 
-.about p {
-  margin: 25px 0;
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-flex, .article-image, .bucket .article-text {
+  width: 50%;
+}
+
+.favourite .article-image {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  position: relative;
+  z-index: 1;
+  top: -40px;
+}
+
+.favourite .article-image:before {
+  content: "";
+  background: #709B6B;
+  position: absolute;
+  z-index: -1;
+  right: -20px;
+  top: 20px;
+  width: 100vw;
+  height: 100%;
+}
+
+.favourite .text-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 20px 0 20px 10%;
+}
+
+.bucket {
+  padding-top: 30px;
+}
+
+.bucket .article-text {
+  text-align: right;
+  padding: 20px 10% 20px 0;
+}
+
+.bucket .article-image {
+  position: relative;
+  z-index: 1;
+  top: 20px;
+}
+
+.bucket .article-image:before {
+  content: "";
+  background: #345231;
+  position: absolute;
+  z-index: -1;
+  left: 20px;
+  top: 20px;
+  width: 100vw;
+  height: 100%;
 }
