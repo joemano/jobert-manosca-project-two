@@ -240,12 +240,17 @@ html {
 }
 
 body {
+  background: #F6F6F6;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-size: 2rem;
   color: #1F1F1F;
   line-height: 3.2rem;
   overflow-x: hidden;
+}
+
+.articles, .gallery {
+  background: #fff;
 }
 
 h1, h2, h3, h4, p, ul {
@@ -312,12 +317,8 @@ img {
   max-width: 1280px;
 }
 
-header {
+nav {
   background: #345231;
-  height: 100vh;
-}
-
-header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,7 +331,7 @@ header nav {
   height: 15vh;
 }
 
-header nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,15 +344,20 @@ header nav ul {
   height: 100%;
 }
 
-header nav ul li {
+nav ul li {
   margin: 0 2%;
 }
 
-header nav ul a {
+nav ul a {
   padding: 10px;
   letter-spacing: 0.1rem;
   font-weight: 700;
   color: #fff;
+}
+
+header {
+  background: #345231;
+  height: 100vh;
 }
 
 header .header-flex {
@@ -403,8 +409,34 @@ header .header-flex h2 {
   margin: auto;
 }
 
+.blog nav {
+  height: 10vh;
+}
+
+.blog header {
+  background: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  height: 45vh;
+}
+
+.blog header .header-text {
+  height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #fff;
+}
+
+.blog header .header-text h2 {
+  font-size: 80px;
+  font-size: 8rem;
+  line-height: 6.3rem;
+}
+
 .about {
-  background: #F6F6F6;
   text-align: center;
   padding: 100px 0;
 }
@@ -480,7 +512,6 @@ article {
 }
 
 .journey {
-  background: #F6F6F6;
   padding: 100px 0;
 }
 
@@ -502,6 +533,10 @@ article {
 .journey .journey-text {
   width: 75%;
   padding-left: 7%;
+}
+
+.gallery {
+  padding-bottom: 50px;
 }
 
 .gallery .gallery-heading {
@@ -528,9 +563,30 @@ article {
   margin: 2%;
 }
 
+.blog main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog main .container div {
+  background: #fff;
+}
+
+.blog aside {
+  width: 30%;
+}
+
+.blog aside a {
+  display: inline;
+}
+
+.blog .blog-post {
+  width: 70%;
+}
+
 footer {
   padding: 75px 0;
-  margin-top: 50px;
   background: #F6F6F6;
 }
 

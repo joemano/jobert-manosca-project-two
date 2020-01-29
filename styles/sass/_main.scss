@@ -1,5 +1,4 @@
 .about {
-    background: $background-tertiary;
 
     text-align: center;
 
@@ -73,7 +72,6 @@ article {
 }
 
 .journey {
-    background: $background-tertiary;
 
     padding: 100px 0;
 
@@ -96,6 +94,7 @@ article {
 }
 
 .gallery {
+    padding-bottom: 50px;
     .gallery-heading {
         width: 100%;
     }
@@ -109,5 +108,29 @@ article {
             width: calc(100%/3 - 4%);
             margin: 2%;
         }
+    }
+}
+
+.blog {
+    main {
+        .container {
+            display: flex;
+            
+            div {
+                background: #fff;
+            }
+        }
+    }
+
+    aside {
+        width: 30%;
+
+        a {
+            display: inline;
+        }
+    }
+
+    .blog-post {
+        width: 70%;
     }
 }

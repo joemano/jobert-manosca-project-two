@@ -1,26 +1,27 @@
+nav {
+    background:  $background-primary;
+    @include center-flex();
+    height: 15vh;
+    ul {
+        @include center-flex();
+        height: 100%;
+
+        li {
+            margin: 0 2%;
+        }
+
+        a {
+            padding: 10px;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+            color: $nav-text;
+        }
+    }
+}
+
 header {
     background: $background-primary;
     height: 100vh;
-
-    nav {
-        @include center-flex();
-        height: 15vh;
-        ul {
-            @include center-flex();
-            height: 100%;
-
-            li {
-                margin: 0 2%;
-            }
-
-            a {
-                padding: 10px;
-                letter-spacing: 0.1rem;
-                font-weight: 700;
-                color: $nav-text;
-            }
-        }
-    }
 
     .header-flex {
         @include center-flex();
@@ -59,6 +60,27 @@ header {
             display: inline-block;
 
             margin: auto;
+        }
+    }
+}
+
+.blog {
+    nav { height: 10vh; }
+    header {
+        background: url(../assets/blog-image-1.jpg);
+        background-size: cover;
+        height: 45vh;
+    
+        .header-text {
+            height: 45vh;
+            display: flex;
+            align-items: flex-end;
+            color: #fff;
+    
+            h2 {
+                @include font-size(80);
+                line-height: 6.3rem;
+            }
         }
     }
 }
