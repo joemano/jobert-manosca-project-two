@@ -194,5 +194,54 @@ article {
 
     .comment {
         margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        img {
+            object-fit: contain;
+        }
+
+        .profile-image {
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+
+            div{
+                max-width: 90px;
+                max-height: 90px;
+            }
+        }
+
+        .comment-text {
+            width: 85%;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+
+        input:not(:last-of-type) {
+            margin-right: 2%;
+        }
+
+        input {
+            width: calc(50% - 1%);
+        }
+
+        input, textarea {
+            border: none;
+            padding: 30px;
+        }
+
+        textarea, button {
+            width: 100%;
+        }
+
+        textarea {
+            min-height: 250px;
+            resize: none;
+            margin: 2% 0;
+        }
     }
 }

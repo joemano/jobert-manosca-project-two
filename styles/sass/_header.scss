@@ -64,10 +64,9 @@ header {
     }
 }
 
-.blog {
+.blog, .contact {
     nav { height: 10vh; }
     header {
-        background: url(../assets/blog-image-1.jpg);
         background-size: cover;
         height: 45vh;
     
@@ -79,8 +78,17 @@ header {
     
             h2 {
                 @include font-size(80);
-                line-height: 6.3rem;
+                line-height: 6.2rem;
             }
         }
     }
+}
+
+.blog header {
+    background: url(../assets/blog-image-1.jpg);
+}
+
+.contact header {
+    
+    background: url(../assets/contact-image-1.jpg);
 }
