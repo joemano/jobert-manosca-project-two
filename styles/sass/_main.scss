@@ -216,32 +216,75 @@ article {
         }
     }
 
-    form {
-        display: flex;
-        flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    input:not(:last-of-type) {
+        margin-right: 2%;
+    }
+
+    input {
+        width: calc(50% - 1%);
+    }
+
+    input, textarea {
+        border: none;
+        padding: 30px;
+    }
+
+    textarea, button {
+        width: 100%;
+    }
+
+    textarea {
+        min-height: 250px;
+        resize: none;
+        margin: 2% 0;
+    }
+}
+
+.contact-section .container{
+    display: flex;
+    padding: 75px 0;
+    .contact-holder {
+        background: #fff;
+        padding: 10%;
         margin-top: 20px;
+    }
 
-        input:not(:last-of-type) {
-            margin-right: 2%;
+    .contact-info {
+        width: 40%;
+        margin-right: 3%;
+
+        a {
+            color: $primary-text;
+            text-transform: none;
+            font-weight: 700;
         }
 
-        input {
-            width: calc(50% - 1%);
+        p {
+            margin: 0;
         }
 
-        input, textarea {
-            border: none;
-            padding: 30px;
+        address {
+            font-style: normal;
         }
+    }
 
-        textarea, button {
-            width: 100%;
+    .sm-links {
+        display: flex;
+        a {
+            color: $background-primary;
+            @include font-size(24);
+            padding-right: 30px;
         }
+    }
 
-        textarea {
-            min-height: 250px;
-            resize: none;
-            margin: 2% 0;
-        }
+    .sm-links + a {
+        margin: 20px 0;
     }
 }

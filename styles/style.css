@@ -689,7 +689,7 @@ article {
   width: 85%;
 }
 
-.blog form {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -698,27 +698,76 @@ article {
   margin-top: 20px;
 }
 
-.blog form input:not(:last-of-type) {
+form input:not(:last-of-type) {
   margin-right: 2%;
 }
 
-.blog form input {
+form input {
   width: calc(50% - 1%);
 }
 
-.blog form input, .blog form textarea {
+form input, form textarea {
   border: none;
   padding: 30px;
 }
 
-.blog form textarea, .blog form button {
+form textarea, form button {
   width: 100%;
 }
 
-.blog form textarea {
+form textarea {
   min-height: 250px;
   resize: none;
   margin: 2% 0;
+}
+
+.contact-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 75px 0;
+}
+
+.contact-section .container .contact-holder {
+  background: #fff;
+  padding: 10%;
+  margin-top: 20px;
+}
+
+.contact-section .container .contact-info {
+  width: 40%;
+  margin-right: 3%;
+}
+
+.contact-section .container .contact-info a {
+  color: #1F1F1F;
+  text-transform: none;
+  font-weight: 700;
+}
+
+.contact-section .container .contact-info p {
+  margin: 0;
+}
+
+.contact-section .container .contact-info address {
+  font-style: normal;
+}
+
+.contact-section .container .sm-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-section .container .sm-links a {
+  color: #345231;
+  font-size: 24px;
+  font-size: 2.4rem;
+  padding-right: 30px;
+}
+
+.contact-section .container .sm-links + a {
+  margin: 20px 0;
 }
 
 footer {
