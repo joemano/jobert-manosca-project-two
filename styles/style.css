@@ -563,26 +563,93 @@ article {
   margin: 2%;
 }
 
+.blog h3 {
+  font-size: 32px;
+  font-size: 3.2rem;
+}
+
+.blog h4 {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+.blog main {
+  padding: 75px 0;
+}
+
 .blog main .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.blog main .container div {
+.blog main .container .about-side,
+.blog main .container .post,
+.blog main .container .comment,
+.blog main .container .recent-text {
   background: #fff;
 }
 
 .blog aside {
-  width: 30%;
+  width: calc(100%/3);
+  margin-right: 3%;
 }
 
 .blog aside a {
   display: inline;
+  text-transform: none;
+  color: #1F1F1F;
 }
 
 .blog .blog-post {
-  width: 70%;
+  width: calc((100%/3)*2);
+}
+
+.blog .recent-text {
+  margin-top: 20px;
+  padding: 10%;
+}
+
+.blog .recent-text ul {
+  margin-top: 25px;
+  list-style: disc;
+  padding-left: 30px;
+}
+
+.blog .recent-text ul a {
+  position: relative;
+  left: 20px;
+}
+
+.blog .about-side {
+  padding: 10%;
+}
+
+.blog .about-side h4 {
+  margin-top: 25px;
+}
+
+.blog .about-side p {
+  margin-bottom: 0;
+}
+
+.blog .about-side a {
+  font-weight: 700;
+  color: #709B6B;
+}
+
+.blog .post,
+.blog .comment {
+  padding: 5%;
+}
+
+.blog .comments,
+.blog .post {
+  border-bottom: 5px #709B6B solid;
+}
+
+.blog .comment {
+  margin-top: 25px;
 }
 
 footer {
