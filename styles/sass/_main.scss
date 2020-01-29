@@ -94,3 +94,20 @@ article {
         padding-left: 7%;
     }
 }
+
+.gallery {
+    .gallery-heading {
+        width: 100%;
+    }
+
+    ul {
+        @include center-flex();
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+        li {
+            width: calc(100%/3 - 4%);
+            margin: 2%;
+        }
+    }
+}

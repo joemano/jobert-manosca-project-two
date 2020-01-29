@@ -503,3 +503,27 @@ article {
   width: 75%;
   padding-left: 7%;
 }
+
+.gallery .gallery-heading {
+  width: 100%;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.gallery ul li {
+  width: calc(100%/3 - 4%);
+  margin: 2%;
+}
