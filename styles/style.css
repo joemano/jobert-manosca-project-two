@@ -301,6 +301,13 @@ button {
   font-size: 20px;
   font-size: 2rem;
   text-transform: uppercase;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+
+button:hover, button:focus {
+  background: #1F1F1F;
+  color: #E4A436;
 }
 
 img {
@@ -315,6 +322,36 @@ img {
   width: 80%;
   margin: 0 auto;
   max-width: 1280px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: #F6F6F6;
+  color: #1F1F1F;
+  border: 2px #1F1F1F solid;
+}
+
+.skip-link:focus {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.mobile_only,
+input[type="checkbox"] {
+  display: none;
+}
+
+.mobile_only {
+  position: fixed;
+  z-index: 40;
+  top: 2.5%;
+  right: 3%;
+  font-size: 2.6rem;
+  padding: 10px;
 }
 
 nav {
@@ -353,6 +390,12 @@ nav ul a {
   letter-spacing: 0.1rem;
   font-weight: 700;
   color: #fff;
+  -webkit-transition: color ease-in 0.3s;
+  transition: color ease-in 0.3s;
+}
+
+nav ul a:hover, nav ul a:focus {
+  color: #E4A436;
 }
 
 header {
@@ -806,11 +849,20 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: -webkit-transform ease-in 0.3s;
+  transition: -webkit-transform ease-in 0.3s;
+  transition: transform ease-in 0.3s;
+  transition: transform ease-in 0.3s, -webkit-transform ease-in 0.3s;
 }
 
 footer a .icon {
   width: 10%;
   margin-right: 3%;
+}
+
+footer a:hover, footer a:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .blog footer {
@@ -853,7 +905,39 @@ footer a .icon {
     padding: 0 10px;
   }
   nav {
-    display: none;
+    position: fixed;
+    z-index: 20;
+  }
+  nav ul {
+    background: #1F1F1F;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform ease-in 0.3s;
+    transition: -webkit-transform ease-in 0.3s;
+    transition: transform ease-in 0.3s;
+    transition: transform ease-in 0.3s, -webkit-transform ease-in 0.3s;
+    width: 50vw;
+  }
+  nav ul h1 {
+    visibility: hidden;
+    font-size: 0;
+  }
+  .mobile_only {
+    display: inline-block;
+    background: #1F1F1F;
+    color: #fff;
+  }
+  input[type="checkbox"]:checked + ul, ul:focus-within {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   header .header-flex {
     -webkit-box-orient: vertical;

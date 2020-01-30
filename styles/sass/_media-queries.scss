@@ -31,8 +31,38 @@
         padding: 0 10px;
     }
 
-    nav {
-        display: none;
+    nav { 
+        position: fixed; 
+        z-index: 20;
+        ul{
+            background: $primary-text;
+            flex-direction: column;
+            
+            position: fixed;
+            z-index: 30;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+            transition: transform ease-in 0.3s;
+
+            width: 50vw;
+
+            h1 {
+                visibility: hidden;
+                font-size: 0;
+            }
+        }
+    }
+    
+    
+    .mobile_only {
+        display: inline-block;
+        background: $primary-text;
+        color: #fff;
+    }
+
+    input[type="checkbox"]:checked + ul, ul:focus-within {
+        transform: translateX(0);
     }
     
     header {

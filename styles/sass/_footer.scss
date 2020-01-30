@@ -25,10 +25,16 @@ footer {
         display: flex;
         // flex-wrap: wrap;
 
+        transition: transform ease-in 0.3s;
+
         .icon {
             width: 10%;
             margin-right: 3%;
         }
+    }
+
+    #{$a-hover-focus} {
+        transform: scale(1.1);
     }
 }
 

@@ -1,3 +1,17 @@
+.mobile_only,
+input[type="checkbox"] {
+    display: none;
+}
+
+.mobile_only {
+    position: fixed;
+    z-index: 40;
+    top: 2.5%;
+    right: 3%;
+    font-size: 2.6rem;
+    padding: 10px;
+}
+
 nav {
     background:  $background-primary;
     @include center-flex();
@@ -15,6 +29,11 @@ nav {
             letter-spacing: 0.1rem;
             font-weight: 700;
             color: $nav-text;
+            transition: color ease-in 0.3s;
+        }
+
+        #{$a-hover-focus} {
+            color: $accent;
         }
     }
 }
