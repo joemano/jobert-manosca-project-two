@@ -1,0 +1,135 @@
+@media (max-width: 1280px) {
+    h2 {
+        font-size: calc(4rem + 6vw);
+    }
+
+    .journey {
+        .journey-image {
+            max-height: 300px;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .container,
+    .text-flex,
+    .article-image,
+    .bucket .article-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    header {
+        .header-flex {
+            flex-direction: column;
+            // align-items: center;
+            // .header-text {
+            //     width: 100%;
+            //     text-align: center;
+            // }
+                text-align: center;
+            .header-image {
+                width: 100%;
+                height: 70%;
+                img {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .favourite {
+
+        .text-flex{
+            padding: 20px 0;
+        }
+
+        .article-image {
+            order: 0;
+            top: 0;
+
+            img {
+                margin: auto;
+            }
+        }
+
+        .article-image:before {
+            right: 0px;
+        }
+    }
+
+    .bucket {
+        .article-text{
+            padding: 20px 0;
+        }
+
+        .article-image {
+            top: 0;
+            img {
+                margin: auto;
+            }
+        }
+    
+        .article-image:before {
+            left: 0;
+        }
+    }
+
+    .journey {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .journey-image {
+            min-width: 300px;
+        }
+
+        .journey-text {
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+    footer {
+        ul {
+            li {
+                width: 100%;
+                // padding: 0 40px;
+                a {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .icon {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        .gallery-image {
+            width: 100%;
+            margin: 0;
+            img {
+                margin: auto;
+                min-width: 100%;
+            }
+        }
+    }
+}

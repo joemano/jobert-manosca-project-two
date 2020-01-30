@@ -823,3 +823,117 @@ footer a .icon {
 .copyright p {
   margin: 0;
 }
+
+@media (max-width: 1280px) {
+  h2 {
+    font-size: calc(4rem + 6vw);
+  }
+  .journey .journey-image {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 940px) {
+  .container,
+  .text-flex,
+  .article-image,
+  .bucket .article-text {
+    width: 100%;
+    text-align: center;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  nav {
+    display: none;
+  }
+  header .header-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  header .header-flex .header-image {
+    width: 100%;
+    height: 70%;
+  }
+  header .header-flex .header-image img {
+    margin: auto;
+  }
+  article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .favourite .text-flex {
+    padding: 20px 0;
+  }
+  .favourite .article-image {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    top: 0;
+  }
+  .favourite .article-image img {
+    margin: auto;
+  }
+  .favourite .article-image:before {
+    right: 0px;
+  }
+  .bucket .article-text {
+    padding: 20px 0;
+  }
+  .bucket .article-image {
+    top: 0;
+  }
+  .bucket .article-image img {
+    margin: auto;
+  }
+  .bucket .article-image:before {
+    left: 0;
+  }
+  .journey .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .journey .journey-image {
+    min-width: 300px;
+  }
+  .journey .journey-text {
+    padding: 0;
+    width: 100%;
+  }
+  footer ul li {
+    width: 100%;
+  }
+  footer ul li a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer ul li a .icon {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery .gallery-image {
+    width: 100%;
+    margin: 0;
+  }
+  .gallery .gallery-image img {
+    margin: auto;
+    min-width: 100%;
+  }
+}
