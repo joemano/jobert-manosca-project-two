@@ -32,6 +32,13 @@ footer {
     }
 }
 
+.blog {
+    footer {
+        display: none;
+        
+    }
+}
+
 .copyright {
     background: $primary-text;
     color: #fff;

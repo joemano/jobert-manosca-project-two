@@ -813,6 +813,10 @@ footer a .icon {
   margin-right: 3%;
 }
 
+.blog footer {
+  display: none;
+}
+
 .copyright {
   background: #1F1F1F;
   color: #fff;
@@ -929,6 +933,24 @@ footer a .icon {
   footer ul li a .icon {
     margin: 0;
   }
+  aside {
+    display: none;
+  }
+  .blog .blog-post {
+    width: 100%;
+  }
+  .blog footer {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .blog footer .recent-text ul {
+    list-style: none;
+    padding: 0;
+  }
+  .blog footer .recent-text ul a {
+    left: 0;
+  }
   .contact-section .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -969,5 +991,17 @@ footer a .icon {
   }
   form textarea, form input {
     margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }

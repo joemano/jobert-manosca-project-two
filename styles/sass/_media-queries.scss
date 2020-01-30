@@ -128,6 +128,31 @@
         }
     }
 
+    aside {
+        display: none;
+    }
+
+    .blog {
+        .blog-post {
+            width: 100%;
+        }
+
+        footer {
+            display: block;
+            padding: 20px 0;
+            text-align: center;
+
+            .recent-text ul {
+                list-style: none;
+                padding: 0;
+
+                a {
+                    left: 0;
+                }
+            }
+        }
+    }
+
     .contact-section {
         .container {
             flex-direction: column;
@@ -166,6 +191,15 @@
 
         textarea, input {
             margin: 15px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .blog {
+        .comment {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
