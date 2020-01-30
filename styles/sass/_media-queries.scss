@@ -8,6 +8,14 @@
             max-height: 300px;
         }
     }
+
+    .contact-info {
+        address {
+            p {
+                @include font-size(14);
+            }
+        }
+    }
 }
 
 @media (max-width: 940px) {
@@ -119,6 +127,25 @@
             }
         }
     }
+
+    .contact-section {
+        .container {
+            flex-direction: column;
+
+            .contact-info {
+                width: 100%;
+                text-align: center;
+
+                .sm-links {
+                    @include center-flex();
+
+                    a {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -130,6 +157,15 @@
                 margin: auto;
                 min-width: 100%;
             }
+        }
+    }
+    form {
+        input {
+            width: 100%;
+        }
+
+        textarea, input {
+            margin: 15px;
         }
     }
 }

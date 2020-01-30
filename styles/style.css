@@ -831,6 +831,10 @@ footer a .icon {
   .journey .journey-image {
     max-height: 300px;
   }
+  .contact-info address p {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 940px) {
@@ -925,6 +929,30 @@ footer a .icon {
   footer ul li a .icon {
     margin: 0;
   }
+  .contact-section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-section .container .contact-info {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-section .container .contact-info .sm-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-section .container .contact-info .sm-links a {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -935,5 +963,11 @@ footer a .icon {
   .gallery .gallery-image img {
     margin: auto;
     min-width: 100%;
+  }
+  form input {
+    width: 100%;
+  }
+  form textarea, form input {
+    margin: 15px;
   }
 }
