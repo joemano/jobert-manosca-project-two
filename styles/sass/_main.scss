@@ -9,29 +9,26 @@ article {
     display: flex;
 }
 
-.text-flex, .article-image, .bucket .article-text {
+.text-flex, .image-background, .bucket .article-text {
     width: 50%;
 }
 
 .favourite {
-    .article-image {
+    .image-background {
+        background: $background-secondary;
         order: -1;
         position: relative;
         z-index: 1;
-        top: -40px;
+        top: -20px;
+
+        display: flex;
+        justify-content: flex-end;
     }
 
-    .article-image:before {
-        content: "";
-        background: $background-secondary;
-
-        position: absolute;
-        z-index: -1;
-        right: -20px;
-        top: 20px;
-
-        width: 100vw;
-        height: 100%;
+    .article-image {
+        position: relative;
+        right: 20px;
+        bottom: 20px;
     }
 
     .text-flex {
@@ -39,35 +36,29 @@ article {
         flex-direction: column;
         justify-content: flex-end;
 
-        padding: 20px 0 20px 10%;
+        padding: 20px 10%;
     }
 }
 
 .bucket {
     padding-top: 30px;
 
+    .image-background {
+        background: $background-primary;
+        position: relative;
+        z-index: 1;
+        top: 40px;
+    }
+
     .article-text {
         text-align: right;
-        padding: 20px 10% 20px 0;
+        padding: 20px 10%;
     }
 
     .article-image {
         position: relative;
-        z-index: 1;
-        top: 20px;
-    }
-
-    .article-image:before {
-        content: "";
-        background: $background-primary;
-
-        position: absolute;
-        z-index: -1;
-        left: 20px;
-        top: 20px;
-
-        width: 100vw;
-        height: 100%;
+        left: -20px;
+        bottom: 20px;
     }
 }
 
@@ -97,6 +88,9 @@ article {
     padding-bottom: 50px;
     .gallery-heading {
         width: 100%;
+        img {
+            min-height: 290px;
+        }
     }
 
     ul {
